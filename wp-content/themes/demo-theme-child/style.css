@@ -1,0 +1,456 @@
+/* LICENSE & DETAILS
+   ==================================================
+
+	Theme Name: Demo Child Theme (from Atelier)
+	Theme URI: http://atelier.swiftideas.com
+	Description: An Incredible Responsive Multi-Purpose WordPress WooCommerce Theme - Designed & Developed by Swift Ideas ( www.swiftideas.com )
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Template: demo-theme
+	Version: 1.0
+	Author: Swift Ideas
+	Author URI: www.swiftideas.com
+
+	All files, unless otherwise stated, are released under the GNU General Public License
+	version 3.0 (http://www.gnu.org/licenses/gpl-3.0.html)
+
+   ==================================================
+*/
+
+/* --------------------------------------------
+	CHILD THEME CSS
+-------------------------------------------- */
+
+/* Sets font size for rem */
+html {
+    font-size: 16px !important;
+}
+
+/* H1 */
+.main-title {
+    font-size: 3.25rem;
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: -.13rem;
+    color: #43484d;
+    margin-bottom: 1.25rem;
+}
+
+/* Main text */
+.main-excerpt {
+    font-size: 1.375rem;
+    font-weight: 300;
+    line-height: 1.45;
+    color: #5e6977;
+    margin: auto;
+    margin-bottom: 4.6875rem;
+}
+
+/* Menu and header stuff */
+.menu-item-text {
+    color: #86939e;
+    transition: color .5s ease;
+}
+.menu-item-text:hover {
+color: #adbbc7;
+}
+.full-center .float-menu {
+    text-align: left;
+    width: 100%;
+    z-index: 98;
+    padding-left: 15%;
+}
+.header-wrap {
+    box-shadow: 0 0.25rem 0.1875rem -0.125rem rgba(0,0,0,.1);
+}
+#header nav {
+    font-size: 16px !important;
+}
+
+/* Icon boxes */
+.sf-icon.image-display {
+    border-radius: 0;
+}
+.sf-icon-box h3 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #43484d;
+}
+.sf-icon-box p {
+    font-size: 1rem;
+    color: #86939e;
+    line-height: 1.56;
+    margin-top: .625rem;
+}
+.sf-icon img {
+    height: 45px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+/* Laptop area */
+.laptop figure {
+    margin: 0 !important;
+}
+.laptop-slider h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #43484d !important;
+    margin-bottom: 1.25rem;
+    text-align: left;
+}
+.laptop-slider p {
+    color: #86939e !important;
+    margin-bottom: 1.5625rem;
+    text-align: left; 
+    font-size: 1rem !important;
+    text-shadow: none !important;
+}
+.laptop-slider a {
+    font-weight: 500;
+    color: #358ed7 !important;
+    margin-bottom: 2.1875rem;
+    display: block;
+    font-size: 1rem !important;
+}
+/* Laptop slider */
+.swift-slider a.swift-slider-prev, .swift-slider a.swift-slider-next {
+    color: #000!important;
+}
+
+/* Pricing table area */
+.row-pad {
+    padding-top: 20px;
+}
+.price-table-colour {
+    background-image: linear-gradient(to bottom,#F9F9F9,#f9f9f9 87%,#5e6977 87%,#5e6977 100%);
+    padding-top: 3rem;
+    position: relative;
+    z-index: 10;
+}
+.tick:before {
+  content: "\2713 ";
+  color: #7dc855;
+}
+.cross:before {
+  content: "\2717 ";
+  color: crimson;
+}
+ul {
+  list-style-type: none !important;
+}
+.pricing-button, .sf-button.transparent-light:hover, a.sf-button.transparent-dark:hover {
+  cursor: pointer;
+  width: 100%;
+  background-color: transparent;
+  border: .125rem solid #e1e8ee !important;
+  border-radius: .3125rem !important;
+  padding: .625rem 0 !important;
+  font: 500 1rem/1 'Roboto', sans-serif;
+  text-align: center !important;
+  color: #358ed7 !important;
+}
+.pricing-button-green {
+    cursor: pointer;
+    width: 100%;
+    border-radius: .3125rem !important;
+    padding: .625rem 0 !important;
+    font: 500 1rem/1 'Roboto', sans-serif;
+    text-align: center !important;    
+    border: .125rem solid #7dc855;
+    background-color: #7dc855;
+    color: #fff;
+}
+/* Radius/borders on left/center/right price columns */
+.radius-left {
+    border-top-left-radius: .625rem;
+    border-bottom-left-radius: .625rem;
+    background-color: #fff;
+}
+.no-radius {
+    background-color: #fff;
+    border-left: 1px solid #f4f4f4;
+    border-right: 1px solid #f4f4f4;
+}
+.radius-right {
+    border-top-right-radius: .625rem;
+    border-bottom-right-radius: .625rem;
+    background-color: #39add1;
+}
+/* Price table fonts */
+.price-table h3 {
+    font-size: 3.25rem;
+    font-weight: 300;
+    color: #43484d;
+}
+.price-table h4 {
+    font-size: .875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #358ed7;
+}
+.price-table h5 {
+    color: #86939e;
+    margin: .1875rem 0 1.75rem;
+}
+.price-table h6 {
+    font-size: .875rem;
+    color: #86939e;
+}
+.price-table p, .price-table li {
+    margin-top: 1.6875rem;
+    line-height: 1.56;
+    color: #86939e;
+    font-size: 1rem ;
+}
+/* additions for right column because colours are different */
+.radius-right h3 {
+    font-size: 3.25rem;
+    font-weight: 300;
+    color: #fff;
+}
+.radius-right h4 {
+    font-size: .875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.6);
+}
+.radius-right h5 {
+    color: rgba(255,255,255,.6);
+    margin: .1875rem 0 1.75rem;
+}
+.radius-right h6 {
+    font-size: .875rem;
+    color: rgba(255,255,255,.6);
+}
+.radius-right p {
+    margin-top: 1.6875rem;
+    line-height: 1.56;
+    color: rgba(255,255,255,.6);
+    font-size: 1rem ;
+}
+.radius-right li {
+    margin-top: 1.6875rem;
+    line-height: 1.56;
+    color: #fff;
+    font-size: 1rem ;
+}
+
+/* Pasta row stuff begins here */
+.pasta-row {
+    padding-top: 3rem;
+    position: relative;
+    z-index: 10;
+}
+.pasta-row h2 {
+    color: #fff;
+}
+.pasta-button {
+    cursor: pointer;
+    width: 20%;
+    border-radius: .3125rem !important;
+    padding: .625rem 0 !important;
+    font: 500 1rem/1 'Roboto', sans-serif;
+    text-align: center !important;    
+    border: .125rem solid #7dc855;
+    background-color: #7dc855;
+    color: #fff;
+}
+.pasta-row p {
+    color: rgba(255,255,255,.8);
+}
+
+/* Logo row stuff */
+.testimonial p {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: rgba(255,255,255,.6);
+    margin-bottom: 2.1875rem;
+}
+.wpls-logo-showcase .wpls-logo-cnt.slick-slide img {
+    display: inline-block !important;
+    padding: 10px;
+    border: 0;
+    box-shadow: none !important;
+}
+/* Removes logo navigation dots */
+.slick-dots {
+    display:none;
+}
+
+/* Sets footer colours etc */
+#footer-wrap, #footer-container {
+	background-color: #545E6B;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+#footer-wrap {
+	max-width: 1170px;
+	margin: auto;
+}
+
+/* Footer widget styles */
+#media_image-2 {
+    width: 8%;
+}
+#text-2 {
+    width: 22%;
+    padding-right: 20px;
+}
+#nav_menu-2, #nav_menu-3, #nav_menu-4 {
+    width: 12%;
+}
+#text-2 p {
+    color: rgba(255,255,255,.6);
+    line-height: 1.56;
+    font-size: 1rem;
+}
+#nav_menu-2 h6, #nav_menu-3 h6, #nav_menu-4 h6 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 1.3125rem;
+    text-transform: none;
+    margin-top: 0;
+}
+.menu-footer-menu-1-container li a, .menu-footer-menu-2-container li a, .menu-footer-menu-3-container li a {
+    color: rgba(255,255,255,.6);
+    font-size: 1rem;
+}
+.widget ul li {
+    border: 0;
+}
+.widget ul li>a {
+    padding: 0;
+}
+#text-3 img {
+    width: 30px;
+}
+
+/* Styles the language switcher */
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: rgba(255,255,255,.6);
+    padding: 0;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgba(255,255,255,.6);
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: transparent;
+    text-decoration: none;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+/* Aligns it to the top with the other widgets */
+.custom-html-widget {
+    margin-top: -8px !important;
+}
+/* Adds padding to the second language to get it to line up with English */
+.language-pad {
+    padding-left: 18px;
+}
+
+/* Media queries for tablet view */
+@media screen and (max-width: 767px) {
+    /* Changes all the border radius to be top/bottom and not left/right. Adds box shadow. Centres text */
+    .radius-left {
+        border-top-left-radius: .625rem;
+        border-top-right-radius: .625rem;
+        border-bottom-left-radius: 0;
+        text-align:center;
+        margin: 0 30px;
+        box-shadow: 0.125rem 0.125rem 0.1875rem 0 rgba(0,0,0,.15);
+    }
+    .no-radius {
+        text-align: center;
+        border-left: 0;
+        border-right: 0;        
+        border-top: 1px solid #f4f4f4;
+        border-bottom: 1px solid #f4f4f4;
+        margin: 0 30px;
+        box-shadow: 0.125rem 0.125rem 0.1875rem 0 rgba(0,0,0,.15);
+    }
+    .radius-right {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: .625rem;
+        border-bottom-left-radius: .625rem;
+        text-align: center;
+        margin: 0 30px;
+        box-shadow: 0.125rem 0.125rem 0.1875rem 0 rgba(0,0,0,.15);
+    }
+ 
+    /* Changes the margins on the icon boxes */
+    .spb_icon_box>.spb-asset-content .sf-icon-box {
+        margin-top: -20px;
+    }
+
+    /* Changes footer spacing */
+     #media_image-2 {
+        width: 20%;
+        text-align: right;
+    }
+    #text-2 {
+        width: 70%;
+        padding-bottom: 4rem;
+    }
+    #nav_menu-2, #nav_menu-3, #nav_menu-4 {
+        width: 25%;
+    }
+    #custom_html-2 {
+        width: 100%;
+        text-align: right;
+        padding-right: 2rem;
+    }
+
+    /* Removes logo navigation dots  */
+    .slick-dots {
+        display: none !important;
+    }
+
+    /* Makes pasta button wider */
+    .pasta-button {
+    	width: 50%;
+	}
+}
+
+/* Media queries for mobile view */
+@media screen and (max-width: 638px) {
+    /* Changes footer spacing */
+    #nav_menu-2 {
+        padding-left: 23%;
+    }
+    #nav_menu-3 {
+        padding-left: 20%;
+    }    
+    #nav_menu-4 {
+        padding-left: 18%;
+    }    
+}

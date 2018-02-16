@@ -1,0 +1,11 @@
+# Switch rewrite engine off then on, in case this was installed under another set of rewrite rules
+RewriteEngine Off
+RewriteEngine On
+
+SetEnv DEFAULT_PHP_VERSION 7
+
+DirectoryIndex index.cgi index.php
+
+# BEGIN WordPress
+
+# END WordPress
